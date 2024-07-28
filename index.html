@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProPlay Media Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="titlebar">
+            <img src="./logo.png" alt="logo" class="title-img">
+            <h1 class="title">ProPlay Media Player</h1>
+        </div>
+        <div class="menu-bar">
+            <div class="menu">
+                <div class="menu-btn" id="videoBtn">Open</div>
+                <input type="file" class="videoInput" id="videoInput">
+            </div>
+            <div class="menu">
+                <div class="menu-btn">Playback</div>
+                <ul class="menu-items">
+                    <li id="speedUp">Speed Up</li>
+                    <li id="speedDown">Speed Down</li>
+                </ul>
+            </div>
+            <div class="menu">
+                <div class="menu-btn">Audio</div>
+                <ul class="menu-items">
+                    <li id="volumeUp">Volume Up</li>
+                    <li id="volumeDown">Volume Down</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main id="main"></main>
+    <div class="toast"></div>
+
+    <footer>
+        <div class="time-container">
+            <div class="current-time" id="currentTime">--/--/--</div>
+            <div class="time-slider">
+                <input type="range" value="0" min="0" class="slider" id="slider">
+            </div>
+            <div class="total-time" id="totalTime">--/--/--</div>
+        </div>
+        <div class="menu-btns">
+            <div class="play_pause-container btn" id="playPause">
+            </div>
+            <div class="rest-options">
+                <div class="back-btn btn" id="backwardBtn">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="placeholder btn" id="stopBtn">
+                    <i class="fas fa-stop"></i>
+                </div>
+                <div class="forward-btn btn" id="forwardBtn">
+                    <i class="fas fa-forward"></i>
+                </div>
+                <div class="fullscreen-btn btn" id="fullscreen">
+                    <i class="fas fa-expand"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
